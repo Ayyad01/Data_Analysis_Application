@@ -17,9 +17,7 @@ if fl is not None:
     filename = fl.name
     st.write(filename)
     df = pd.read_csv(filename, encoding="ISO-8859-1")
-else:
-    os.chdir(r"D:\Portofolio\Streamlit")
-    df = pd.read_csv("Sample-Superstore.csv", encoding="ISO-8859-1")
+
 col1, col2 = st.columns((2))
 df["Order Date"] = pd.to_datetime(df["Order Date"])
 
