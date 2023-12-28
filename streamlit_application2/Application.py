@@ -10,7 +10,7 @@ from functools import lru_cache
 warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title="Superstore!!!", page_icon=":bar_chart:", layout="wide")
-st.title(":chart_with_upwards_trend:  Store Sales Analysis Dahsboard")
+st.title(":chart_with_upwards_trend:  Store Sales Analysis Dashboard")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 df = pd.read_csv("Sample-Superstore.csv")
 
