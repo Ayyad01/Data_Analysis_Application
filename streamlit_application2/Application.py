@@ -13,7 +13,7 @@ st.set_page_config(page_title="Superstore!!!", page_icon=":bar_chart:", layout="
 st.title(":chart_with_upwards_trend:  Store Sales Analysis Dashboard")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 #Using os library to reference the file path
-script_directory=os.path.dirname("D:\Portofolio\streamlit 2th Project\streamlit_application2\Sample-Superstore.csv")
+script_directory=os.path.dirname(__file__)
 file_path=os.path.join(script_directory,"Sample-Superstore.csv")
 df = pd.read_csv("Sample-Superstore.csv")
 
